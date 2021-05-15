@@ -1,0 +1,33 @@
+{
+	"name": "te003-hostel-takeover",
+	"title": "Hostel Takeover Adventure Module",
+	"description": "Hostel Takeover, a Torg Eternity One-Act Adventure",
+	"author": "VTT Southwest, LLC",
+	"version": "1.0.0",
+	"minimumCoreVersion": "0.6.0",
+	"compatibleCoreVersion":"0.7.9",
+	"systems": ["torgeternity"],
+	"packs": [
+    		{
+      		"name": "hostel-takeover-actors",
+      		"label": "Hostel Takeover (Actors)",
+      		"path": "packs/hostel-takeover-actors.db",
+      		"entity": "Actor",
+      		"module": "te003-hostel-takeover"
+			},
+   		{
+      		"name": "hostel-takeover-journals",
+      		"label": "Hostel Takeover (Journals)",
+      		"path": "packs/hostel-takeover-journals.db",
+      		"entity": "JournalEntry",
+      		"module": "te003-hostel-takeover"
+			},
+   		{
+      		"name": "hostel-takeover-scenes",
+      		"label": "Hostel Takeover (Scenes)",
+      		"path": "packs/hostel-takeover-scenes.db",
+      		"entity": "Scene",
+      		"module": "te003-hostel-takeover"
+			}
+		]
+}
