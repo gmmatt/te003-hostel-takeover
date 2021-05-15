@@ -29,5 +29,8 @@
       		"entity": "Scene",
       		"module": "te003-hostel-takeover"
 			}
-		]
+		],
+	"url": "https://github.com/gmmatt/te003-hostel-takeover",
+	"manifest": "https://github.com/gmmatt/te003-hostel-takeover/releases/latest/download/system.json",
+	"download": "https://github.com/gmmatt/te003-hostel-takeover/releases/latest/download/torgeternity.zip"
 }
