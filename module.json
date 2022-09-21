@@ -1,34 +1,43 @@
 {
 	"name": "te003-hostel-takeover",
-	"title": "Hostel Takeover Adventure Module",
+	"title": "Torg Eternity - Hostel Takeover Adventure Module",
 	"description": "Hostel Takeover, a Torg Eternity One-Act Adventure",
-	"author": "VTT Southwest, LLC",
-	"version": "1.3",
-	"minimumCoreVersion": "0.6.0",
-	"compatibleCoreVersion":"0.8.8",
-	"systems": ["torgeternity"],
+        "authors": [
+           {
+           "name": "VTT Southwest, LLC"
+           }
+         ],
+	"version": "1.4",
+        "relationships.system": "torgeternity",
+        "compatibility": {
+          "minimum": "9",
+          "verified": "10"
+        },
 	"packs": [
     		{
       		"name": "hostel-takeover-actors",
       		"label": "Hostel Takeover (Actors)",
       		"path": "packs/hostel-takeover-actors.db",
-      		"entity": "Actor",
+      		"type": "Actor",
+                "system": "torgeternity",
       		"module": "te003-hostel-takeover"
-			},
+		},
    		{
       		"name": "hostel-takeover-journals",
       		"label": "Hostel Takeover (Journals)",
       		"path": "packs/hostel-takeover-journals.db",
-      		"entity": "JournalEntry",
+      		"type": "JournalEntry",
+                "system": "torgeternity",
       		"module": "te003-hostel-takeover"
-			},
+		},
    		{
       		"name": "hostel-takeover-scenes",
       		"label": "Hostel Takeover (Scenes)",
       		"path": "packs/hostel-takeover-scenes.db",
-      		"entity": "Scene",
+      		"type": "Scene",
+                "system": "torgeternity",
       		"module": "te003-hostel-takeover"
-			}
+		}
 		],
 	"url": "https://github.com/gmmatt/te003-hostel-takeover",
 	"manifest": "https://github.com/gmmatt/te003-hostel-takeover/releases/latest/download/module.json",
