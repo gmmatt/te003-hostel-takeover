@@ -7,39 +7,111 @@
            "name": "VTT Southwest, LLC"
            }
          ],
-	"version": "2.0.0",
-        "relationships.system": "torgeternity",
+	"version": "2.1.0",
         "compatibility": {
-          "minimum": "9",
-          "verified": "10"
+          "minimum": "11",
+          "verified": "11"
         },
+  "relationships": {
+    "systems": [{
+      "id": "torgeternity",
+      "type": "system"
+    }]
+  },
+    "esmodules": [
+      "te003-hostel-takeover.js"
+    ],
+  "media":[{
+    "type": "setup",
+    "url": "modules/te003-hostel-takeover/images/thumbs/setup.webp",
+    "thumbnail": "modules/te003-hostel-takeover/images/thumbs/setup-thumb.webp"
+  }],
+	"url": "https://github.com/gmmatt/te003-hostel-takeover",
+	"manifest": "https://github.com/gmmatt/te003-hostel-takeover/releases/latest/download/module.json",
+	"download": "https://github.com/gmmatt/te003-hostel-takeover/releases/v2.0.0/te003-hostel-takeover.zip",
 	"packs": [
     		{
       		"name": "hostel-takeover-actors",
-      		"label": "Hostel Takeover (Actors)",
+      		"label": "Hostel Takeover: Actors (en)",
       		"path": "packs/hostel-takeover-actors.db",
       		"type": "Actor",
                 "system": "torgeternity",
-      		"module": "te003-hostel-takeover"
+                "private": true,
+		"ownership": {
+			"ASSISTANT": "OWNER"
+		},
+                "flags": {}
+		},
+    		{
+      		"name": "hostel-takeover-handouts",
+      		"label": "Hostel Takeover: Handouts (en)",
+      		"path": "packs/hostel-takeover-handouts.db",
+      		"type": "JournalEntry",
+                "system": "torgeternity",
+                "private": true,
+		"ownership": {
+			"ASSISTANT": "OWNER"
+		},
+                "flags": {}
 		},
    		{
       		"name": "hostel-takeover-journals",
-      		"label": "Hostel Takeover (Journals)",
+      		"label": "Hostel Takeover: Adventure (en)",
       		"path": "packs/hostel-takeover-journals.db",
       		"type": "JournalEntry",
                 "system": "torgeternity",
-      		"module": "te003-hostel-takeover"
+                "private": true,
+		"ownership": {
+			"ASSISTANT": "OWNER"
+		},
+                "flags": {}
 		},
    		{
       		"name": "hostel-takeover-scenes",
-      		"label": "Hostel Takeover (Scenes)",
+      		"label": "Hostel Takeover: Scenes (en)",
       		"path": "packs/hostel-takeover-scenes.db",
       		"type": "Scene",
                 "system": "torgeternity",
-      		"module": "te003-hostel-takeover"
+                "private": true,
+		"ownership": {
+			"ASSISTANT": "OWNER"
+		},
+                "flags": {}
 		}
 		],
-	"url": "https://github.com/gmmatt/te003-hostel-takeover",
-	"manifest": "https://github.com/gmmatt/te003-hostel-takeover/releases/latest/download/module.json",
-	"download": "https://github.com/gmmatt/te003-hostel-takeover/releases/v2.0.0/te003-hostel-takeover.zip"
+  "packFolders": [{
+        "name": "TORG Eternity - Hostel Takeover Adventure Module",
+        "sorting": "m",
+        "color": "#415a9b",
+        "folders": [{
+          "name": "English",
+          "sorting": "m",
+          "color": "#960000",
+          "folders": [{
+            "name": "Journals",
+            "sorting": "m",
+            "color": "#415a9b",
+            "packs": [
+              "hostel-takeover-journals",
+              "hostel-takeover-handouts"
+            ]
+          },
+          {
+            "name": "Actors",
+            "sorting": "m",
+            "color": "#415a9b",
+            "packs": [
+              "hostel-takeover-actors"
+            ]
+          },
+          {
+            "name": "Scenes",
+            "sorting": "m",
+            "color": "#415a9b",
+            "packs": [
+              "hostel-takeover-scenes"
+            ]
+          }]
+        }]
+      }]
 }
